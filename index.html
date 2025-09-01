@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himangi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>HIMANGI</h1>
+      <ul>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" style="padding: 50px 20px;">
+    <div
+      style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 40px; flex-direction: row-reverse;">
+
+      <!-- 👤 Profile Photo -->
+      <div style="flex-shrink: 0; width: 500px; display: flex; justify-content: center; align-items: center;">
+        <img src="himangi_photo.jpg" alt="himangi"
+          style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px #0ea5e9;">
+      </div>
+
+      <!-- 📄 Text and Buttons -->
+      <div style="max-width: 600px;">
+        <h2 style="font-size: 2.5rem; color: #6b21a8; margin-bottom: 10px;">Himangi Mishra</h2>
+        <div class="typing" id="typingText"
+          style="font-size: 1.2rem; font-weight: bold; color: #0f172a; margin-bottom: 15px; min-height: 32px;">
+        </div>
+
+        <p style="margin-bottom: 20px; color: #333;">
+         Transforming concepts into code,<br>
+          and code into meaningful experiences.
+        </p>
+
+        <a href="#contact" class="btn" style="
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #9333ea;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 15px;
+      ">
+          Hire Me
+        </a>
+
+        <a href="https://drive.google.com/file/d/181E9ZA70vGhGsaoex8GapFJu9NQ8vwtP/view?usp=drive_link" download style="
+          display: inline-block;
+          padding: 12px 24px;
+          background-color: #581c87;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#0369a1'" onmouseout="this.style.backgroundColor='#0ea5e9'">
+          📄 Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div
+      style="display: flex; flex-wrap: wrap; border-radius: 15px; overflow: hidden; box-shadow: 0 0 10px #0ea5e9; margin-top: 30px;">
+      <div
+        style="flex: 1 1 200px; background: linear-gradient(to bottom, #581c87, #1e293b); padding: 20px; color: #e0e7ff;">
+        <p style="margin-bottom: 15px; font-weight: bold; color: #c084fc; cursor: pointer;"
+          onclick="showAboutTab('summary')">Quick Summary</p>
+        <p style="margin-bottom: 15px; font-weight: bold; color: white; cursor: pointer;"
+          onclick="showAboutTab('professional')">Professional Journey</p>
+        <p style="margin-bottom: 0px; font-weight: bold; color: white; cursor: pointer;"
+          onclick="showAboutTab('academic')">Academic Background</p>
+      </div>
+      <div id="about-summary" class="about-tab"
+        style="flex: 3 1 500px; background-color: #fce7f3; color: black; padding: 20px; display: block;">
+
+        <p style="font-weight: 400; font-style:italic;">I am an enthusiastic and dedicated developer with a strong foundation in Java and Data Structures & Algorithms,
+           always eager to solve challenging problems with efficient solutions.
+            Along with development, I am passionate about exploring the field of Machine Learning, where I enjoy applying concepts to real-world projects.
+             My interest lies in continuously learning new technologies and building impactful applications that add value.
+              With effective communication skills and a collaborative mindset,
+               I thrive in team environments and can clearly convey technical ideas to both technical and non-technical audiences.
+        </p>
+
+      </div>
+      <div id="about-professional" class="about-tab"
+        style="flex: 3 1 500px; background-color: #fce7f3; color: black; padding: 20px; display: none;">
+        <p><strong>★ Web Developer Intern</strong><br>
+          → Softpro India Lucknow<br>
+          → August 2024 - September 2024
+        </p>
+        <br>
+        <p><strong>★ Learnovote Enterprises</strong><br>
+          → Data Science & AI <br>
+          → July 2025 - August 2025</p>
+        <br>
+        <p><strong>★ IIC Convener</strong><br>
+          → IIC <br>
+          → January 2024 - January 2025</p>
+      </div>
+      <div id="about-academic" class="about-tab"
+        style="flex: 3 1 500px; background-color: #fce7f3; color: black; padding: 20px; display: none;">
+        <p><strong>★ Babu Banarasi Das Institute of Technology and Management</strong><br>
+          → Bachelor of Technology<br>
+          → Computer Science Engineering | 2022 - 2026 | Percentage: 76</p>
+        <br>
+        <p><strong>★ OXFORD PUBLIC SCHOOL</strong><br>
+          → Intermediate<br>
+          → PCM | 2021 | Percentage: 80</p>
+        <br>
+        <p><strong>★ LITTLE FLOWER SCHOOL </strong><br>
+          → High School<br>
+          → 2019 | Percentage: 94</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-boxes">
+      <div class="skills-box">
+        <h3 style="color: white;">Developer</h3>
+        <ul>
+          <li>HTML 5</li>
+          <li>CSS 3</li>
+          <li>JavaScript</li>
+          <li>AWS</li>
+        </ul>
+      </div>
+      <div class="skills-box">
+        <h3 style="color: white;">Programmer</h3>
+        <ul>
+          <li>Java</li>
+          <li>C</li>
+          <li>DSA</li>
+          <li>MySQL</li>
+           <li>PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="skills-box">
+        <h3 style="color: white;">Toolkit</h3>
+        <ul>
+          <li>Canva</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>Google Colab</li>
+          <li>Jupyter Notebook</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- (unchanged sections omitted for brevity) -->
+
+  <section id="projects" style="background-color: #fdf4ff;">
+    <h2>Projects</h2>
+    <div class="skills-boxes">
+      <div class="skills-box">
+        <a href="https://github.com/himangi131" target="_blank"><img src="image.png"
+            alt="Portfolio Screenshot"></a>
+        <h3>My Personal Portfolio</h3>
+        <p>Developed a responsive personal portfolio using HTML and CSS to highlight my skills, projects, achievements, and contact details professionally.</p>
+        <div>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+      <div class="skills-box">
+        <a href="https://github.com/himangi131" target="_blank">
+          <img src="pizza sales analysis screenshot.png" alt="pizza sales analysis screenshot"></a>
+        <h3>Pizza sales analysis</h3>
+        <p>Created a pizza sales analysis project with MySQL for analysis of sales data.
+        </p>
+        <div>
+          <span>MySQL</span>
+          <span>Excel</span>
+          <span>canva</span>
+        </div>
+      </div>
+      <div class="skills-box">
+        <a href="https://github.com/himangi131" target="_blank">
+          <img src="AQI IMAGE.png" alt="AQI predicton screenshot"></a>
+        <h3>Air quality index prediction model</h3>
+        <p>Developed a Air Quality Index prediction model using historical environmental data achieving forecasting of pollution levels.</p>
+        <div>
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>Matplotlib</span>
+          <span>Scikit-learn</span>
+          <span>google-colab</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://github.com/himangi131" target="_blank" class="btn">Explore My Projects</a>
+    </div>
+  </section>
+
+  <section id="certifications" style="padding: 60px 20px; background-color: #fdf4ff;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #4b1d68; margin-bottom: 40px;">Certifications</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+      <!-- Certificate 1 -->
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1q89M8FojmABCNZ_qnjVrlp-TI2_04jSW/view?usp=drive_link" target="_blank">
+          <img src="Meta.jpeg" alt="Certificate 1" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">Meta</h3>
+          <p style="margin: 0; color: #555;">Course: HTML and CSS in depth</p>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1fDJ82-3e_x5kxnz8W2yngWol1njMfqor/view?usp=drive_link" target="_blank">
+          <img src="operating system.JPEG" alt="Certificate 2" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">Microsoft</h3>
+          <p style="margin: 0; color: #555;">Course: Introduction to Computers and Opearting System and Security</p>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1uQOb3O59RxV8Wkm9ubQ8hNue9pBWqezL/view?usp=drive_link" target="_blank">
+          <img src="Deloitte.JPEG" alt="Certificate 3" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">Deloitte</h3>
+          <p style="margin: 0; color: #555;">Cyber job Simulation</p>
+        </div>
+      </div>
+
+
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1SV6FoOlhSSJ6gZzG7uIOj_MwgpkOtAEY/view?usp=drive_link" target="_blank">
+          <img src="aws.JPEG" alt="Certificate 3" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">GeeksforGeeks</h3>
+          <p style="margin: 0; color: #555;">AWS</p>
+        </div>
+      </div>
+
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/14d4MyX-diLr-EMxa5OvReFPbPKXIq9jO/view?usp=drive_link" target="_blank">
+          <img src="Adobe.png" alt="Certificate 3" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">Adobe</h3>
+          <p style="margin: 0; color: #555;">Certificate of participation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" style="padding: 40px 20px; background-color: #fdf4ff">
+    <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 30px;">Achievements</h2>
+
+    <ul style="list-style: none; padding: 0; max-width: 950px; margin: 0 auto;">
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        🏆Participated in Arjuna 1.0 organized by the Civil Innovation and Technology Cell, NIT Agartala.
+      </li>
+      
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        🎯 Solved 100+ DSA problems across platforms like LeetCode, GFG, HackerRank
+      </li>
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        🎯 HackerRank 5-Star Coder in Problem Solving
+        Recognized for exceptional problem-solving abilities with a 5-star rating on HackerRank, reflecting strong
+        command over algorithms and data structures.
+      </li>
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        Meta Hacker Cup 2024 – Global Competitive Programming Contest by Meta (Facebook)
+        Achieved a global rank 1932 among thousand of Participants worldwide, demonstrating strong
+        algorithmic problem-solving and time-efficient coding skills under pressure.
+      </li>
+    </ul>
+  </section>
+
+  <!--contect me-->
+  <section id="contact" style="padding: 60px 20px; background-color: #fdf4ff; color: #1e1e2f;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #431407; margin-bottom: 40px;">Contact Me</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1100px; margin: auto;">
+
+      <!-- Left Form -->
+      <div style="flex: 1 1 45%; margin-bottom: 30px;">
+        <h3 style="color: #581c87;">Say Hello 😊</h3>
+        <form>
+          <input type="text" placeholder="Your Name"
+            style="width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 15px; border: none; border-bottom: 2px solid #ccc; background: transparent;">
+          <input type="email" placeholder="Your Email"
+            style="width: 100%; padding: 10px; margin-bottom: 15px; border: none; border-bottom: 2px solid #ccc; background: transparent;">
+          <textarea placeholder="Your Message" rows="4"
+            style="width: 100%; padding: 10px; border: none; border-bottom: 2px solid #ccc; background: transparent;"></textarea>
+          <button type="submit"
+            style="margin-top: 15px; padding: 10px 20px; background-color: #581c87; color: white; border: none; border-radius: 6px; cursor: pointer;">Send
+            Message
+          </button>
+        </form>
+        <p style="margin-top: 10px; font-style: italic; color: #333;">
+          Or feel free to reach out through my socials - <strong>I’d love to connect!</strong>
+        </p>
+      </div>
+
+      <!-- Right Social Links -->
+      <div style="flex: 1 1 45%; display: flex; flex-direction: column; gap: 15px; margin-left: 100px;">
+
+        <a href="https://www.linkedin.com/in/himangi-mishra-3b4a35283/" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>LinkedIn</strong><br><span>@Himangimishra</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/himangi131" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>GitHub</strong><br><span>@Himangimishra</span>
+          </div>
+        </a>
+
+        <a href="https://x.com/himangi_mishra19" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>X</strong><br><span>@Himangimishra</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/naruto7705uzumaki/?hl=en" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>Instagram</strong><br><span>@Himangimishra</span>
+          </div>
+        </a>
+
+        <a href="https://leetcode.com/u/himangi19/" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>LeetCode</strong><br><span>@Himangimishra</span>
+          </div>
+        </a>
+
+        <a href="https://www.hackerrank.com/profile/mishrahimangi311" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>HackerRank</strong><br><span>@Himangimishra</span>
+          </div>
+        </a>
+
+        <a href="mailto:mishrahimangi31@gmail.com" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>Email</strong><br><span>mishrahimangi31@gmail.com</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer
+    style="width: 100%; background: linear-gradient(to right, #7e225c, #4b0144); color: white; padding: 40px 20px; text-align: center; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+
+    <!-- Name & Tagline -->
+    <h1 style="color: #fb7185; font-size: 2.5rem; margin-bottom: 10px;">Himangi Mishra</h1>
+    <p style="font-size: 1.2rem; font-family: 'Georgia', serif; margin-bottom: 30px;">
+      Building solutions, one line at a time.
+    </p>
+
+    <!-- Navigation Links -->
+    <nav style="margin-bottom: 25px;">
+      <a href="#home" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Home</a>
+      <a href="#about" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">About</a>
+      <a href="#skills" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Skills</a>
+      <a href="#projects" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Projects</a>
+      <a href="#certifications"
+        style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Certifications</a>
+      <a href="#contact" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Contact</a>
+    </nav>
+
+    <!-- Copyright -->
+    <p style="margin-bottom: 5px;">© 2025 Himangi Mishra. All rights reserved.</p>
+    <p style="margin-bottom: 30px;">
+      <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> |
+      <a href="#" style="color: white; text-decoration: underline;">Terms of Service</a>
+    </p>
+
+    <!-- Designer Credit -->
+    <p style="color: gold; font-weight: bold;">Designed with ❤️ by Himangi Mishra</p>
+
+  </footer>
+  </div>
+  </section>
+  <script src="app.js"></script>
+  <!-- (rest of the unchanged sections) -->
+</body>
+
+</html>

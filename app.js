@@ -7,10 +7,10 @@ function showAboutTab(tab) {
 }
 
 const titles = [
-  "Web Developer",
-  "Programmer",
+  "Aspiring Data Analyst",
+  "SQL Developer",
+  "Java Developer",
   "Tech Enthusiast",
-  "DSA Enthusiast"
 ];
 let index = 0, charIndex = 0, currentText = '', isDeleting = false;
 function type() {
